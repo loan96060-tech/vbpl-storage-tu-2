@@ -1,0 +1,648 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><link rel="shortcut icon" href="../favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+	Đăng Nhập
+</title><meta name="robots" content="INDEX,FOLLOW" /><meta name="Description" content="Là trang Web mạnh nhất về văn bản pháp luật Việt Nam, THƯ VIỆN PHÁP LUẬT cung cấp cơ sở dữ liệu, tra cứu và thảo luận pháp luật" /><meta name="Keywords" content="phap luat, luật, thư viện pháp luật, pháp luật, luật việt nam, luật pháp, luật sư, tư vấn luật, văn bản pháp luật, Thời sự pháp luật,  luật doanh nghiệp, dân luật, sinh viên luật, diễn đàn pháp luật, luật sư tư vấn, luật dân sự, nghị định, hiến pháp, quyết định, ký hiệu, hiệu lực, ngày ban hành, người ký, chủ tịch, quốc hội, chính phủ, nhà nước, bộ, ngành,  uỷ ban nhân dân, tư pháp, lập pháp, hành pháp, thông tư, chỉ thị, báo cáo, thông tư liên tịch, công văn, luật sư, đất đai,việc làm, thuế, tài chính, doanh nghiệp, hôn nhân, gia đình, hình sự, dân sự, hải quan, công điện, nghị quyết, quy chế, sắc lệnh, thủ tướng chính phủ, bộ trưởng, thứ trưởng, chủ tịch nước, chủ tịch quốc hội, chủ nhiệm uỷ ban,nhân dân, công ty" /><meta http-equiv="REFRESH" content="600" /><link href="/Styles/reset.css" rel="stylesheet" type="text/css" /><link href="/Styles/register.css" rel="stylesheet" type="text/css" /><link href="/Styles/main.css?v=11" rel="stylesheet" type="text/css" /><link href="/Styles/menu.css?v=24121986" rel="stylesheet" type="text/css" /><link href="/Styles/toggle.css?v=24121986" rel="stylesheet" type="text/css" /><link href="/Styles/form.css" rel="stylesheet" type="text/css" />
+    <!-- Tooltip -->
+    <link href="/Styles/Tooltip.css" rel="stylesheet" type="text/css" />
+    <!-- luocdo -->
+    <link href="/Styles/FlowLink.css" rel="stylesheet" type="text/css" /><link type="text/css" href="/Styles/ui-lightness/jquery-ui-1.8.13.custom.css" rel="stylesheet" />
+    <!-- Scripts -->
+        <script type="text/javascript">
+            var MemberGA = 'Anonymous';
+    </script>
+     <script type="text/javascript" language="javascript" src="/Scripts/GoogleEvent.js?v=3"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-4355683-16']);
+        _gaq.push(['_setDomainName', '.thuvienphapluat.vn']);
+        // set custom variables
+
+        _gaq.push(["_setCustomVar", 1, "Member", MemberGA, 3]);
+        if (document.referrer.indexOf("http://danluat.thuvienphapluat.vn") != -1) { _gaq.push(["_setCustomVar", 2, "Referrer", document.referrer, 1]); }
+        _gaq.push(['_trackEvent', 'UserActivity', MemberGA, window.location.href]);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <script type="text/javascript" language="javascript" src="/Scripts/jquery.min.js"></script>
+         <!-- Guiders -->
+    <script type="text/javascript" language="javascript" src="/Scripts/guiders-1.2.3.js"></script>
+    <link href="/Styles/guiders-1.2.3.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="/Scripts/jquery-ui-1.8.13.custom.min.js"></script>
+    <script type="text/javascript" language="javascript" src="/Scripts/jquery.idTabs.js"></script>
+    <script type="text/javascript" language="javascript" src="/Scripts/Menu.js"></script>
+    <script type="text/javascript" language="javascript" src="/Scripts/Search.js?v=24121988"></script>
+    <script type="text/javascript" language="javascript" src="/Scripts/form.js?v=241219871"></script>
+    <script type="text/javascript" language="javascript" src="/Scripts/jquery.PrintArea.js"></script>
+    <script type="text/javascript" language="javascript" src="/Scripts/jquery.cookies.2.2.0.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $("#accordion").accordion({ header: "h3" });
+            var TabIndex=0;
+            try{
+             TabIndex = 0;
+            }catch(err){TabIndex=0;}
+
+             $(".idTabs-Detail").idTabs(".current")
+
+            $("ul.idTabs").idTabs({
+              start:TabIndex,
+              selected:".current"
+            });
+
+            $("h2.trigger").click(function () {
+                $(this).toggleClass("active").next().slideToggle("slow");
+            });
+            $("#projected_start_day,#projected_end_day").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'dd/mm/yy',
+                dayNamesMin: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'],
+                monthNames: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                firstDay: 1,
+                                yearRange: 'c-100:c+100'
+            });
+            var errmsg='';
+            if (errmsg!=null&&errmsg.length>0) {
+                $("#error-dialog-form").html(errmsg);
+            $("#error-dialog-form").dialog("open");
+            }
+
+            var errmsg = '';
+            if (errmsg != null && errmsg.length > 0) {
+                $("#error-dialog-form-chat").html(errmsg);
+                $("#error-dialog-form-chat").dialog("open");
+            }
+        });
+    </script>
+    
+    <!--GetDate-->
+    
+    <!-- Tooltip -->
+    <script type="text/javascript" language="javascript" src="/Scripts/jquery.tooltip.js"></script>
+    <script type="text/javascript">
+        document.write('<img id="dhtmlpointer" src="/images/arrow_tooltip.gif">');
+    </script>
+    <script type="text/javascript" language="javascript" src="/Scripts/tooltip.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery.pngFix.js"></script>
+</head>
+<body>
+    <form method="post" action="login.aspx?ReturnUrl=%2fdocuments%2fdownload.aspx%3fid%3dbjsfL4upLSR%252faGK7UDsHKg%253d%253d%26part%3d-1" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBdACSDRzSUFBQUFBQUFFQU95OUIyQWNTWllsSmk5dHludC9TdlZLMStCMG9RaUFZQk1rMkpCQUVPekJpTTNta3V3ZGFVY2pLYXNxZ2NwbFZtVmRaaFpBek8yZHZQZmVlKys5OTk1Nzc3MzN1anVkVGlmMzMvOC9YR1prQVd6MnprcmF5WjRoZ0tySUh6OStmQjgvSXY3dlgvTTMvWFdUM2IyOVQvZnU3ZDdmdi9lYnpuNmJYK3NjLy94YXZ5YjkrK3Y4V3IrdS9mM1grclYrZzkvME4vMXRmcTFmOEJ1K3lDNkxpNnpOdjZyTFgvZWp1NnZzSXI4N3k1WVhiNi9IV2JONjkzczBiYjc2Yk84WHR0ZXIvTFB6T3M5bnMxL3JOd1NvYzM3NzEzbVR2MnZ4MmErSlAzK1hYek9memY2ZkFBQUEvLzludTR2aGdnQUFBQT09GAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRhjdGwwMCRDb250ZW50JFJlbWVtYmVyTWVXWOlNOmi7GkdBR9248s6WIfAwig==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKx8qrpBgLWrPKDBQKF4+WQCALa04XBCgLw+tGbBp4ec4v25Tp/hisvTBrtvvuQ53Ua" />
+    <!--Container -->
+    <table width="960" border="0" align="center" id="tblcontainer" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="height: 90px; vertical-align: top;">
+                            <!--Header content -->
+                            
+<div id="header" style="height:100px">
+    <a href="/" title="THƯ VIỆN PHÁP LUẬT">
+        <img src="/images/logo_xuan.png" alt="Logo" class="logo" /></a> <a href="/" title="THƯ VIỆN PHÁP LUẬT">
+            <p class="name-logo">
+                <span class="slogan">...loại rủi ro pháp lý, nắm cơ hội làm giàu...</span></p>
+        </a>
+    <div id="top_menu">
+        <ul>
+            <li class="liLine"></li>
+            <li class="liMenu">
+                <img src="/images/home_icon.png" alt="" /><a href="/" title="Trang chủ">Trang chủ</a></li>
+            <li class="liLine"></li>
+            <li class="liMenu">
+                <img src="/images/dv_icon.png" alt="" /><a href="/page/goidichvulawsoft.aspx" title="Các gói dịch vụ">Các
+                    gói dịch vụ</a></li>
+            <li class="liLine"></li>
+            <li class="liMenu">
+                <img src="/images/news_icon.gif" height="12" alt="Tin tức Pháp Luật" /><a href="http://thuvienphapluat.vn/tintuc"
+                    title="">Tin tức Pháp Luật</a></li>
+            <li class="liLine"></li>
+            <li class="liMenu">
+                <img src="/images/danluat.gif" alt="Cộng đồng DanLuat" height="12px" />
+                <a href="http://danluat.thuvienphapluat.vn/" target="_blank">Cộng đồng DânLuật</a></li>
+            <li class="liLine"></li>
+            <li class="liMenu">
+                <img src="/images/ContactIcon.gif" height="12px" alt="Liên hệ" /><a href="/page/lienhe.aspx"
+                    title="">Liên hệ</a></li>
+            <li class="liLine"></li>
+            <li class="liMenu" style="padding: 6px 6px 0 4px; height: 32px;"><a href="/en/index.aspx"
+                title="English Version">
+                <img src="/images/Flag_icon.png" alt="English Version" /></a></li>
+        </ul>
+    </div>
+    <!--Block Registry -->
+    
+    <!--Top links -->
+    <div id="toplinks" style="vertical-align: bottom;">
+        <img src="/images/sitemap/sodo.jpg" alt="" width="12" height="12" class="icon" /><span><a
+            href="/SiteMap.aspx" class="linkstop">Sơ đồ WebSite</a></span>&nbsp;|&nbsp;
+        <img src="/images/icon-tb.png" alt="" width="12" height="12" class="icon" /><span><a
+            href="/page/gioithieu.aspx" class="linkstop">Giới thiệu</a></span>&nbsp;|&nbsp;<img
+                src="/images/icon-guide.png" alt="" width="15" height="14" class="icon" /><span><a
+                    href="/page/viewcontentleft.aspx?key=2" class="linkstop">Hướng dẫn sử dụng</a></span><span
+                        class="icon"></span> &nbsp;|&nbsp;<img src="/images/icon-rss.gif" alt="" class="icon" /><span><a
+                            target="_blank" title="Rss cung cấp văn bản mới cập nhật" href="http://thuvienphapluat.vn/rss.xml"
+                            class="linkstop">Rss</a></span> &nbsp;|&nbsp;<img src="/images/star_icon.gif" height="12"
+                                alt="Bookmark Thư Viện Pháp Luật" class="icon" /><span><a id="btSetHomePage" title="Bookmark Thư Viện Pháp Luật"
+                                    href='#' class="linkstop">Homepage</a></span> &nbsp;|&nbsp;
+        <img src="/images/icon-tb.png" alt="" width="12" height="12" class="icon" /><span><a
+            href="/page/widget.aspx" class="linkstop">Widget</a></span>
+    </div>
+    <div style="position: absolute; top: 71px; left: 565px; color: Red; font-weight: bold">
+        
+    </div>
+    <div style="position: absolute; top: 71px; left: 745px;">
+        <div class="lPMTVPL">
+            <img src="/images/ls_sw.jpg" alt="" width="12" height="12" class="icon" />
+            <span><a class="linkstop">Phần mềm <strong style="font-family: Times New Roman; font-size: 11px;
+                color: Red;">THƯ VIỆN PHÁP LUẬT</strong></a></span>
+            <div class="mnGoiDV">
+                <ul>
+                    <li><a style="color: Green;" href="/page/viewcontentleft.aspx?key=3">Giới thiệu phần
+                        mềm</a></li>
+                    <li><a style="color: Green;" href="/page/capnhatpm.aspx">Cập nhật thư viện</a></li>
+                    <li><a style="color: Green;" href="/page/laymasudung.aspx">Lấy mã sử dụng</a></li>
+                    <li><a style="color: Green;" href="/page/dailyphanphoi.aspx">Đại lý phân phối</a></li>
+                    <li><a style="color: Green;" href="/page/viewcontentleft.aspx?key=4">Hướng dẫn sử dụng</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $("#btSetHomePage").click(function () {
+            if (document.all) {
+                document.body.style.behavior = 'url(#default#homepage)';
+                document.body.setHomePage('http://thuvienphapluat.vn');
+            } else {
+                alert("Chọn Tools > Option > Main > Use Current Page (Alt+C)");
+            }
+        });
+
+        $(".lPMTVPL").mouseover(function () {
+            $(".mnGoiDV").show();
+        }).mouseout(function () {
+            $(".mnGoiDV").hide();
+        });
+    });
+</script>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td valign="top">
+                                        <!--Three column -->
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td valign="top">
+                                                    <div id="middle-column">
+                                                        
+                                                    </div>
+                                                </td>
+                                                <td valign="top">
+                                                    
+    <p class="info-top-3col">Đăng Nhập</p>
+    <div id="block-info-3col">
+        <div id="Content_pnlLoginTemplate" class="cmBox2">
+	
+            <div class=""> 
+                <table border="0" cellpadding="2" cellspacing="0" width="100%" >
+                <tr>
+                    <td style="width:35%;">
+                    <label for="Content_UserName" id="Content_lblUserName">Tên truy cập:</label>                    
+                    </td>
+                    <td>
+                        <input name="ctl00$Content$UserName" type="text" id="Content_UserName" class="TxtInput" />  
+                        &nbsp;
+                    </td>
+                 </tr>
+                 <tr>                                                   
+                    <td>
+                        <label for="Content_Password" id="Content_lblPassword">Mật khẩu:</label>                    
+                    </td>
+                    <td>
+                        <input name="ctl00$Content$Password" type="password" id="Content_Password" class="TxtInput" /> 
+                        &nbsp; 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right">                        
+                                                                      
+                    </td>
+                    <td align="left">
+                        <input type="submit" name="ctl00$Content$cmdLogin" value="Đăng nhập" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Content$cmdLogin&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="Content_cmdLogin" /> &nbsp;                                                            
+                        <input id="Content_RememberMe" type="checkbox" name="ctl00$Content$RememberMe" checked="checked" /><label for="Content_RememberMe">Ghi nhớ</label>     
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><a href="#" id="lkFogetPassWord" style="font-size:11px;">Quên mật khẩu?</a>&nbsp;&nbsp; <b style="font-size:11px;">&nbsp;|&nbsp;<a id="Content_registerHyperLink" href="/page/dangky.aspx?step=2&amp;type=free">Đăng ký mới</a></b>                   
+                    </td> 
+                </tr>
+                <tr>
+                <td align="center" colspan="2">
+                    <center style="padding-top:5px">
+                            <a id="aregister" href="/page/dangky.aspx?step=2&type=free">
+                                <span id="register1">DỄ DÀNG - NHANH CHÓNG</span><span style="display:none" id="register2" >Có hơn 194.000 Văn Bản Luật</span></a></center>
+                </td>
+                </tr>                                              
+                </table>
+            </div>
+            <div class="bottom"></div>
+
+</div>
+    </div>
+    <p class="info-bottom-3col"></p>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+            registerplay();
+
+        });
+
+        var play = 0;
+        function registerplay() {
+
+            if (play == 0) {
+                $('#register2').hide();
+                $('#register1').show();
+
+                play = 1;
+            }
+            else {
+                $('#register1').hide();
+                $('#register2').show();
+                play = 0;
+            }
+            setTimeout('registerplay()', 1500);
+
+        }
+    </script>
+
+                                                </td>
+                                                <td valign="top">
+                                                    <div id="right-column">
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>                                           
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!--Navigation -->
+                                        
+<div id="bottom">
+    <div class="spacer">
+    </div>
+    <div class="company">
+        <div class="column-news">
+            <p>
+                <img src="/images/logo-bottom.jpg" alt="" width="57" height="57" class="logo-bottom" />
+            </p>
+            <table border="0" cellpadding="2" cellspacing="2">
+                <tr valign="top">
+                    <td width="70px">
+                        <b>Địa chỉ:</b>
+                    </td>
+                    <td>
+                        17 Nguyễn Gia Thiều, P.6, Q.3, TP.HCM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Điện thoại:</b>
+                    </td>
+                    <td>
+                        (08) 3930 3279 (06 lines) _ <b>Fax:</b> (08) 3930 3009
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>E-mail:</b>
+                    </td>
+                    <td>
+                        <b>i</b>n<b>f</b>o@ThuVienPhapLuat.vn
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="link-columns">
+        <div class="links-list-large">
+            <ul>
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="/page/goidichvulawsoft.aspx">Các Gói Dịch Vụ Online</a></li>
+                <li><a href="/page/viewcontentleft.aspx?key=3">Phần mềm THƯ VIỆN PHÁP LUẬT </a></li>
+                <li><a href="/page/viewcontentleft.aspx?key=2">Hướng Dẫn Sử Dụng</a></li>
+                <li><a href="/page/gioithieu.aspx">Giới Thiệu</a></li>
+            </ul>
+        </div>
+        <div class="line-bot">
+        </div>
+        <div class="links-list">
+            <ul>
+                <li><a href="/page/lienhe.aspx">Liên Hệ</a></li>
+                <li><a href="/archive/default.aspx">Lưu trữ</a></li>
+                <li><a href="/page/goidichvulawsoft.aspx">Đăng ký Thành viên </a></li>
+                <li><a href="/page/viewcontentleft.aspx?key=20">Thỏa Ước Dịch Vụ</a></li>
+                <li><a href="/phap-luat/tim-van-ban.aspx?keyword=&match=True&area=0">Tra cứu pháp luật</a></li>
+                <li><a href="/phap-luat/tim-van-ban.aspx?keyword=&type=3&match=True&area=0">Tra cứu
+                    Công văn</a></li>
+            </ul>
+        </div>
+        <div class="links-list">
+            <ul>
+            
+                <li><a href="http://danluat.thuvienphapluat.vn/luat-su-toan-quoc">Tìm kiếm luật sư</a></li>
+                <li><a target="_blank" href="/phap-luat/tim-van-ban.aspx?keyword=&type=39&match=True&area=0">Tra cứu Tiêu Chuẩn Việt Nam</a></li>
+                <li><a target="_blank" href="http://danluat.thuvienphapluat.vn/">Cộng đồng ngành luật </a></li>
+                <li><a href="/page/WTO.aspx">Biểu thuế WTO</a></li>
+                <li><a target="_blank" href="/page/BangGiaDat.aspx">Bảng giá
+                    đất</a></li>
+            </ul>
+        </div>
+    </div>    
+</div>
+<div class="clr">
+        <div class="ttDoiTac" style="padding-top:3px;">
+            <p style="font-size:10px;"><strong style="color:Red;font-family: Times New Roman; font-size: 13px">THƯ VIỆN PHÁP LUẬT</strong> có liên kết cung cấp dịch vụ tại các Báo điện tử sau:</p>
+            <div class="px5"></div>
+            
+            <!--<a target="_blank" href="http://thuvien.phapluattp.vn/"><img src="/Images/DoiTac/Phap_luat.gif" /></a>-->
+            <a  rel="nofollow" target="_blank" href="http://thuvien.phapluatxahoi.vn/"><img src="/Images/DoiTac/pl_xh.gif" /></a>
+            <a  rel="nofollow" target="_blank" href="http://phapluat.vietstock.vn"><img src="/Images/DoiTac/viet_stock.gif" /></a>
+            <a  rel="nofollow" target="_blank" href="http://phapluat.tienphong.vn"><img src="/Images/DoiTac/tien_phong.gif" /></a>
+            <a  rel="nofollow" target="_blank" href="http://thuvienphapluat.binhphuoc.gov.vn"><img src="/Images/DoiTac/binh_phuoc.gif" /></a>
+            <a  rel="nofollow" target="_blank" href="http://thuvienphapluat.quangtri.gov.vn"><img src="/Images/DoiTac/quangtri.gif" /></a>
+             <a  rel="nofollow" target="_blank" href="http://thuvienphapluat.quangbinh.gov.vn"><img src="/Images/DoiTac/quangbinh.gif" /></a>
+            
+            <a  rel="nofollow" target="_blank" href="http://thuvienphapluat.vn/page/lienhe.aspx"><img src="/Images/DoiTac/hoptac.gif" /></a>
+            <a target="_blank" href="http://www.alexa.com/siteinfo/thuvienphapluat.vn"><script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/t/a?url=thuvienphapluat.vn'></script></a>
+            
+        </div>
+</div>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--End content -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!--Footer -->
+                            
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F2EAE8;">
+                <tr>
+                    <td valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #F2EAE8">
+                            <tr>
+                                <td>
+                                    TVPL:
+                                </td>
+                                <td>
+                                    <b>
+                                        <span id="Footer_khach"></span></b>
+                                </td>
+                                <td>
+                                    <b style="padding-left: 10px;">
+                                        <span id="Footer_dangxem"></span></b>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <div class="footercontent">
+                            <p>
+                                Bản quyền ©2011 <strong style="font-family: Times New Roman; font-size: 11px"><span
+                                    class="txt-ls">THƯ VIỆN PHÁP LUẬT</span></strong>, theo Giấy Chứng nhận số:
+                                1802/2006/QTG của Bộ VHTT.<br />
+                                Giấy phép số: 61/GP-TTĐT, do Bộ TTTT cấp ngày 04/6/2009, thay Giấy phép số 73/GP-BC
+                                do Bộ VHTT cấp ngày 30/03/2006.
+                                <br />
+                                Chịu trách nhiệm chính: Ông Bùi Tường Vũ
+                            </p>
+                        </div>
+                    </td>
+                    <td width="120px" valign="bottom">
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<div id="error-dialog-form" title="Thông báo" style="display: none;">
+</div>
+<div id="error-dialog-form-chat" title="Thông báo" style="display: none;">
+</div>
+<div id="fist-login-dialog-form" title="Thông báo" style="display: none;">
+    <strong>Xin ch&acirc;n th&agrave;nh cảm ơn Th&agrave;nh vi&ecirc;n&nbsp;<span style="color: #ff0000;"><label
+        class="lb_user"></label>&nbsp;</span>đ&atilde; sử dụng www.ThuVienPhapLuat.vn
+    </strong>
+    <br />
+    <br />
+    <ol>
+        <li>Hiện tại <span style="color: #ff0000;"><strong>THƯ VIỆN PH&Aacute;P LUẬT</strong></span>
+            phi&ecirc;n bản ho&agrave;n to&agrave;n mới cung cấp nhiều tiện &iacute;ch vượt
+            trội:</li>
+        <li>Tra cứu dễ d&agrave;ng bởi thanh c&ocirc;ng cụ tra c&uacute;u ho&agrave;n to&agrave;n
+            mới</li>
+        <li>Tra cứu to&agrave;n bộ Văn bản Gốc;</li>
+        <li>Tra cứu hơn 120.000 Văn bản tiếng Việt;</li>
+        <li>Đầy đủ Văn bản Ph&aacute;p Luật bằng tiếng Anh (hợp t&aacute;c c&ugrave;ng Th&ocirc;ng
+            Tấn X&atilde; Việt Nam);</li>
+        <li>Ban Thư K&yacute; Luật sẽ Th&ocirc;ng b&aacute;o t&oacute;m lược những Văn bản Qu&yacute;
+            kh&aacute;ch cần, qua Email hoặc SMS, ngay khi n&oacute; vừa bạn h&agrave;nh, hoặc
+            vừa c&oacute; hiệu lực;</li>
+        <li>Tra cứu 107.000 Thủ tục H&agrave;nh ch&iacute;nh c&aacute;c lọai, biết thủ tục n&agrave;o
+            c&ograve;n đang &aacute;p dụng để &aacute;p dụng;</li>
+        <li>Hỗ Trợ tư vấn Ph&aacute;p l&yacute; sơ bộ miễn ph&iacute; qua c&aacute;c h&igrave;nh
+            thức: Điện Thoại, email, chat yahoo.</li>
+        <li>Khi &aacute;p dụng văn bản, bạn sẽ được biết: &bull; Ng&agrave;y &aacute;p dụng
+            của từng văn bản. &bull; T&igrave;nh trạng hiệu lực của từng văn bản.</li>
+        <li>Đặc biệt hỗ trợ tư vấn ph&aacute;p l&yacute; sơ bộ miễn ph&iacute; qua 3 h&igrave;nh
+            thức: điện thoại, chat yahoo v&agrave; email bởi bộ phận chuy&ecirc;n vi&ecirc;n
+            ph&aacute;p l&yacute;. =&gt; Để c&oacute; thể tra cứu v&agrave; xem được những ti&ecirc;n
+            &iacute;ch tr&ecirc;n vui l&ograve;ng click v&agrave;o link dưới đ&acirc;y để c&oacute;
+            thể tra cứu được những tiện &iacute;ch vượt trội.</li>
+    </ol>
+    <div style="text-align: center;">
+        <a href="/page/RegCustOrder.aspx?action=chuyendoi" style="font-weight: bold; color: Red;">
+            Chuyển đổi g&oacute;i dịch vụ tại đ&acirc;y.</a></div>
+</div>
+<div id="bttop" style="display: none;">
+    Lên đầu trang</div>
+
+<script type='text/javascript'>    $(function () { $(window).scroll(function () { if ($(this).scrollTop() != 0) { $('#bttop').fadeIn(); } else { $('#bttop').fadeOut(); } }); $('#bttop').click(function () { $('body,html').animate({ scrollTop: 0 }, 800); }); });</script>
+<script type="application/javascript">
+    $(document).ready(function () {
+        window.$zopim || (function (d, s) {
+                    var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+    z.set.
+_.push(o)
+}; z._ = []; z.set._ = []; $.async = !0; $.setAttribute('charset', 'utf-8');
+                    $.src = '//v2.zopim.com/?1WdRtASLBMFte3M8pY9d3W7eQZdW9vTZ'; z.t = +new Date; $.
+type = 'text/javascript'; e.parentNode.insertBefore($, e)
+                })(document, 'script');
+
+                $zopim(function () {
+                    $zopim.livechat.window.hide();
+                    var fullname = '';
+                    var email = '';
+                    var usename = 'cnttbtp';
+
+                    if (fullname != "" && email != "") {
+                        $zopim.livechat.setName('');
+                        $zopim.livechat.setEmail('');
+                    }
+                    else if (usename != "") {
+                        $zopim.livechat.setName('cnttbtp');
+                    }
+                });
+   
+
+        $(".hotrodangky a").click(function () {
+            $zopim.livechat.say('Xin chào, tôi không thể đăng ký được');
+            return false;
+        });
+        $(".hotrotimkiem a").click(function () {
+            $zopim.livechat.say('Xin chào, tôi không thể tìm thấy văn bản mình cần');
+            return false;
+        });
+    });
+
+   
+</script>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+    
+        <div id="feedback-dialog-form" title="Gửi góp ý" style="display: none;">
+        <form action="/" method="post" id="FrFeedBack">
+        <table border="0" width="100%">
+            <tr>
+                <td colspan="2" align="center">
+                    <span style="font-size: 15px; color: Red; font-weight: bold; padding: 10px">Góp Ý Cho
+                        THƯ VIỆN PHÁP LUẬT</span>
+                </td>
+            </tr>
+            <tr>
+                <td width="80px">
+                    <p class="name">
+                        Họ & Tên:</p>
+                </td>
+                <td width="550px">
+                    <input name="fbName" type="text" maxlength="100" id="fbName" class="txt-info" value="">
+                </td>
+            </tr>
+            <tr>
+                <td width="80px">
+                    <p class="name">
+                        Email:</p>
+                </td>
+                <td>
+                    <input name="fbEmail" type="text" maxlength="100" id="fbEmail" class="txt-info" value="">
+                </td>
+            </tr>
+            <tr>
+                <td width="80px">
+                    <p class="name">
+                        Điện thoại:</p>
+                </td>
+                <td>
+                    <input name="fbPhone" type="text" maxlength="20" id="fbPhone" class="txt-info" value="">
+                </td>
+            </tr>
+            <tr>
+                <td width="80px">
+                    <p class="name">
+                        Nội dung:</p>
+                </td>
+                <td>
+                    <textarea name="fbContent" id="fbContent" class="txt-info-area" style="height: 300px"
+                        maxlength="2000"></textarea>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    <div id="changepass-dialog-form" title="Thay đổi mật khẩu cá nhân" style="display: none;">
+        <form action="/" method="post" id="FrChangePassword">
+        <div>
+            Bạn hãy nhập mật khẩu đang sử dụng và nhập mật khẩu mới 2 lần để chắc rằng bạn nhập
+            đúng.
+        </div>
+        <div class="clr px10">
+        </div>
+        <p class="name">
+            Tên truy cập:</p>
+        
+        <input name="cpUserName" type="text" maxlength="50" id="cpUserName" class="txt-info"
+            value="">
+        
+        <div class="clr px10">
+        </div>
+        <p class="name">
+            Mật khẩu cũ:</p>
+        <input name="cpOldPassWord" type="password" maxlength="100" id="cpOldPassWord" class="txt-info">
+        <div class="clr px10">
+        </div>
+        <p class="name">
+            Mật khẩu mới:</p>
+        <input name="cpNewPassword" type="password" maxlength="20" id="cpNewPassword" class="txt-info">
+        <div class="clr px10">
+        </div>
+        Nhập lại:</p>
+        <input name="cpNewPassword2" type="password" maxlength="20" id="cpNewPassword2" class="txt-info">
+        </form>
+    </div>
+    <div id="fogetpass-dialog-form" title="Đăng nhập - Quên mật khẩu" style="display: none;">
+        <form action="/" method="post" id="FrFogetPassword">
+        <div>
+            Bạn hãy nhập e-mail đã sử dụng để đăng ký thành viên.
+        </div>
+        <div class="clr px10">
+        </div>
+        <p class="name">
+            E-mail:</p>
+        <input name="cpEmail" type="text" maxlength="100" id="cpEmail" class="txt-info" />
+        </form>
+    </div>
+</body>
+</html>
